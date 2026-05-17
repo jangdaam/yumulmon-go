@@ -771,8 +771,9 @@ html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; }
   padding-bottom: 0.75rem !important;
 }
 
-/* 유물몬 이미지 → 이름: gap보다 더 바짝 붙이기 */
-.pokemon-name { margin-top: -0.2rem !important; }
+/* 유물몬 이미지 → 이름: wrap 높이 축소 + 네거티브 마진으로 최대한 붙이기 */
+.pokemon-wrap { height: 150px !important; }
+.pokemon-name { margin-top: -0.3rem !important; }
 
 /* 퀴즈 폼: 전체 gap은 유지, 문제↔선택지 사이만 추가 여백 */
 #quiz-panel {
