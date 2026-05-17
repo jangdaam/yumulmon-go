@@ -764,18 +764,22 @@ html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; }
 
 /* ===== 게임 레이아웃 오버라이드 ===== */
 
-/* 이름·HP 간격 절반으로 줄이기 + 상단 패딩 축소 */
+/* top-zone: 상단 패딩 축소, HP바 아래 여백은 유지 */
 #top-zone {
   gap: 0.35rem !important;
   padding-top: 1.2rem !important;
-  padding-bottom: 0.3rem !important;
+  padding-bottom: 0.75rem !important;
 }
 
-/* 퀴즈 폼 내부 간격 축소 → 다음 버튼 노출 확보 */
+/* 유물몬 이미지 → 이름: gap보다 더 바짝 붙이기 */
+.pokemon-name { margin-top: -0.2rem !important; }
+
+/* 퀴즈 폼: 전체 gap은 유지, 문제↔선택지 사이만 추가 여백 */
 #quiz-panel {
   gap: 0.5rem !important;
   padding: 0.75rem 1rem 0.65rem !important;
 }
+.quiz-options { margin-top: 0.35rem !important; }
 
 /* 퀴즈 라벨(퀴즈 N/3) 크기 살짝 축소 */
 .quiz-label { font-size: 11px !important; }
