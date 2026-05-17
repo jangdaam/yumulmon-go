@@ -762,8 +762,23 @@ html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; }
   .running { animation: runAway 1s ease-in forwards; }
 
 
-/* ===== 게임 캔버스 전체 90% 축소 ===== */
-#game { zoom: 0.9; }
+/* ===== 게임 레이아웃 오버라이드 ===== */
+
+/* 이름·HP 간격 절반으로 줄이기 + 상단 패딩 축소 */
+#top-zone {
+  gap: 0.35rem !important;
+  padding-top: 1.2rem !important;
+  padding-bottom: 0.3rem !important;
+}
+
+/* 퀴즈 폼 내부 간격 축소 → 다음 버튼 노출 확보 */
+#quiz-panel {
+  gap: 0.5rem !important;
+  padding: 0.75rem 1rem 0.65rem !important;
+}
+
+/* 퀴즈 라벨(퀴즈 N/3) 크기 살짝 축소 */
+.quiz-label { font-size: 11px !important; }
   </style>
 </head>
 <body>
